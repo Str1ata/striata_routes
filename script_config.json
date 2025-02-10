@@ -1,0 +1,254 @@
+{
+    "scriptConfig": {
+        "routeBlips": {
+            "name": "Ponto de coleta",
+            "sprite": "blip_ambient_chore",
+            "color": "BLIP_MODIFIER_MP_COLOR_2",
+            "scale": 0.6
+        },
+        "policeBlip": {
+            "name": "Denuncia",
+            "sprite": "blip_ambient_secret",
+            "color": "BLIP_MODIFIER_MP_COLOR_2",
+            "scale": 0.6,
+            "timeSeconds": 30
+        },
+        "percentCallPoliceChance": 100,
+        "policeJob": "police",
+        "policeNotify": "Um individuo foi visto fazendo algo ilegal!",
+        "interactionDistance": 1.5,
+        "startRouteText": "Pressione ~e~[G]~q~ para iniciar a rota",
+        "pickProductsText": "Pressione ~e~[G]~q~ para iniciar pegar os produtos",
+        "interactionKeyId":  "0x760A9C6F",
+        "cancelRouteText": "Pressione ~e~[SETA PARA BAIXO]~q~ para cancelar a rota!",
+        "noWeight": "Você não tem espaço na mochila!",
+        "cancelKeyId": "0x05CA7C52",
+        "collectAnim": {"dictionary": "mech_pickup@loot@desks@drawer_c", "animName": "loop_find"},
+        "collectTimeSeconds": 5,
+        "updateRouteBlipsServerEvents": ["vorp:playerGroupChange","vorp:playerJobChange","vorp:playerJobGradeChange"],
+        "npcAttackSpawnDistance": 150.0,
+        "routes": [
+            {
+                "allowCallPolice": true,
+                "permission": "opiumgan",
+                "blip": {
+                    "name": "Rota da armaria",
+                    "sprite": "blip_ambient_corpse",
+                    "color": "BLIP_MODIFIER_MP_COLOR_2",
+                    "scale": 0.6
+                },
+                
+                "startCoords": [2225.7627, -143.3407, 33.5934], 
+                "npcAttack": [
+                    {
+                        "coords": [1873.5297, 116.2813, 97.3868, 0.0],
+                        "weapon": "weapon_repeater_evans",
+                        "pedModel": "U_M_M_UniBountyHunter_01"
+                    },
+                    {
+                        "coords": [1869.4154, 130.0747, 98.3136, 0.0],
+                        "weapon": "weapon_repeater_evans",
+                        "pedModel": "U_M_M_UniBountyHunter_01"
+                    },
+                    {
+                        "coords": [1874.2153, 122.1890, 98.0103, 0.0],
+                        "weapon": "weapon_repeater_evans",
+                        "pedModel": "U_M_M_UniBountyHunter_01"
+                    },
+                    {
+                        "coords": [1890.1714, 133.0549, 97.9766, 0.0],
+                        "weapon": "weapon_repeater_evans",
+                        "pedModel": "U_M_M_UniBountyHunter_01"
+                    },
+                    {
+                        "coords": [1880.1890, 139.7538, 98.8022, 0.0],
+                        "weapon": "weapon_repeater_evans",
+                        "pedModel": "U_M_M_UniBountyHunter_01"
+                    }
+                ],
+                "routePoints": [
+                    [ 1887.9561, 130.7473, 98.1282 ],
+                    [ 1872.9890, 122.3209, 97.9597 ],
+
+                    [ 1874.0308, 588.7780, 115.8206 ],
+                    [ 1870.6417, 585.6660, 114.0176 ],
+
+                    [ 1638.5934, 833.7758, 144.8696 ],
+                    [ 1627.6219, 837.3890, 144.7686 ],
+                    
+                    [ 1989.2440, 1192.5363, 171.0879 ],
+                    [ 1988.7561, 1198.1538, 170.8689 ]
+                    
+                ],
+                "items": [
+                    {
+                        "itemName": "herbal_essence",
+                        "itemAmount": [0,2]
+                    },
+                    {
+                        "itemName": "sulfur",
+                        "itemAmount": [0,2]
+                    },
+                    {
+                        "itemName": "honey",
+                        "itemAmount": [0,2]
+                    }
+                ]
+            },
+            {
+                "allowCallPolice": true,
+                "permission": "fazendeiro15",
+                "blip": {
+                    "name": "Rota Opium",
+                    "sprite": "blip_ambient_corpse",
+                    "color": "BLIP_MODIFIER_MP_COLOR_2",
+                    "scale": 0.6
+                },
+                
+                "startCoords": [-2118.5142, 661.6616, 107.2777], 
+                "npcAttack": [
+                ],
+                "routePoints": [
+                    [ -2741.5518, -2392.4702, 45.1355 ],
+                    [ -3321.5869, -2845.6089, -6.0879 ],
+                    [ -3854.1230, -3021.3230, -6.9641 ],
+                    [ -3918.0000, -2780.7429, -15.1362 ],
+                    [ -4177.5430, -2508.6990, 2.9773 ],
+                    [ -4573.0020, -2752.6155, -10.1150 ],
+                    [ -4586.8350, -2909.6968, -17.8828 ],
+                    [ -4363.0552, -3074.0044, -9.9128 ]
+                    
+                ],
+                "items": [
+                    {
+                        "itemName": "alcohol",
+                        "itemAmount": [0,2]
+                    },
+                    {
+                        "itemName": "honey",
+                        "itemAmount": [0,2]
+                    }
+                ]
+            },
+            {
+                "allowCallPolice": true,
+                "permission": "fazendeiro14",
+                "blip": {
+                    "name": "Rota Opium",
+                    "sprite": "blip_ambient_corpse",
+                    "color": "BLIP_MODIFIER_MP_COLOR_2",
+                    "scale": 0.6
+                },
+                
+                "startCoords": [1358.0308, -847.1077, 71.1348], 
+                "npcAttack": [
+                ],
+                "routePoints": [
+                    [ -2741.5518, -2392.4702, 45.1355 ],
+                    [ -3321.5869, -2845.6089, -6.0879 ],
+                    [ -3854.1230, -3021.3230, -6.9641 ],
+                    [ -3918.0000, -2780.7429, -15.1362 ],
+                    [ -4177.5430, -2508.6990, 2.9773 ],
+                    [ -4573.0020, -2752.6155, -10.1150 ],
+                    [ -4586.8350, -2909.6968, -17.8828 ],
+                    [ -4363.0552, -3074.0044, -9.9128 ]
+                    
+                ],
+                "items": [
+                    {
+                        "itemName": "alcohol",
+                        "itemAmount": [0,2]
+                    },
+                    {
+                        "itemName": "honey",
+                        "itemAmount": [0,2]
+                    }
+                ]
+            },
+            {
+                "allowCallPolice": true,
+                "permission": "ferreirovl",
+                "blip": {
+                    "name": "Rota Opium",
+                    "sprite": "blip_ambient_corpse",
+                    "color": "BLIP_MODIFIER_MP_COLOR_2",
+                    "scale": 0.6
+                },
+                
+                "startCoords": [-3323.5649, -2828.5715, -19.4667], 
+                "npcAttack": [
+                ],
+                "routePoints": [
+                    [ -2741.5518, -2392.4702, 45.1355 ],
+                    [ -3321.5869, -2845.6089, -6.0879 ],
+                    [ -3854.1230, -3021.3230, -6.9641 ],
+                    [ -3918.0000, -2780.7429, -15.1362 ],
+                    [ -4177.5430, -2508.6990, 2.9773 ],
+                    [ -4573.0020, -2752.6155, -10.1150 ],
+                    [ -4586.8350, -2909.6968, -17.8828 ],
+                    [ -4363.0552, -3074.0044, -9.9128 ]
+                    
+                ],
+                "items": [
+                    {
+                        "itemName": "alcohol",
+                        "itemAmount": [0,2]
+                    },
+                    {
+                        "itemName": "honey",
+                        "itemAmount": [0,2]
+                    }
+                ]
+            },
+            {
+                "allowCallPolice": true,
+                "permission": "armeirobw",
+                "blip": {
+                    "name": "Rota Opium",
+                    "sprite": "blip_ambient_corpse",
+                    "color": "BLIP_MODIFIER_MP_COLOR_2",
+                    "scale": 0.6
+                },
+                
+                "startCoords": [-4764.3164, -2709.7319, -27.0322], 
+                "npcAttack": [
+                ],
+                "routePoints": [
+                    [ -2741.5518, -2392.4702, 45.1355 ],
+                    [ -3321.5869, -2845.6089, -6.0879 ],
+                    [ -3854.1230, -3021.3230, -6.9641 ],
+                    [ -3918.0000, -2780.7429, -15.1362 ],
+                    [ -4177.5430, -2508.6990, 2.9773 ],
+                    [ -4573.0020, -2752.6155, -10.1150 ],
+                    [ -4586.8350, -2909.6968, -17.8828 ],
+                    [ -4363.0552, -3074.0044, -9.9128 ]
+                    
+                ],
+                "items": [
+                    {
+                        "itemName": "alcohol",
+                        "itemAmount": [0,2]
+                    },
+                    {
+                        "itemName": "honey",
+                        "itemAmount": [0,2]
+                    }
+                ]
+            }
+        ]
+    },
+    "languagePTBR": {
+        "notifys": {
+            "startRoute": "Você iniciou a rota va para o primeiro ponto!",
+            "stopRoute": "Você encerrou as rotas!",
+            "needPermission": "Você não possui a permissão necessária para fazer está rota!"
+        }
+    },
+    "languageENUS": {
+        "notifys": {
+            "startRoute": "You started the route go to the first point!",
+            "stopRoute": "You have finished the routes!",
+            "needPermission": "You do not have the necessary permission to make this route!"
+        }
+    }
+}
